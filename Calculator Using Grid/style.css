@@ -1,0 +1,83 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+
+
+.calculator {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    width: 300px;
+}
+
+/* Display Input */
+.display {
+    width: 94%;
+    height: 60px;
+    font-size: 2em;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    background: #333;
+    color: white;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+/* Grid Layout for Buttons */
+.btns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 10px;
+}
+
+/* Styling for Buttons */
+.btns button{
+    width: 100%;
+    min-height: 60px;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #444;
+    color: white;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.btns button:hover {
+    background: #666;
+}
+
+/* Styling for Operators */
+.btns .operators{
+    background: orange;
+    color: white;
+}
+
+/* Styling for Equals Button */
+#eql{
+    background: orange;
+    color: white;
+    grid-row: span 2; /* Make "=" take up two button spaces */
+}
+#eql:hover {
+    background: #666;
+}
+
+/* Styling for Clear Buttons */
+#clr {
+    background: red;
+    color: white;
+}
+#clr:hover{
+    background: darkred;
+}
